@@ -96,7 +96,7 @@ async function theyWon(who) {
         disableAllButtons();
         console.log("Computer won!");
         scoreComp++;
-        result_div.innerHTML = "You lost, sucks. Restarting Game";
+        result_div.innerHTML = "You lost! Restarting Game";
         computerScore_span.innerHTML = scoreComp;
         await new Promise(resolve => setTimeout(resolve, 2000));
         init();
